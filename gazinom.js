@@ -19,7 +19,7 @@ function waitForElm(selector) {
 }
 
 const newHTMLContent = `
-
+    
 `
 
 
@@ -31,6 +31,8 @@ newElement.innerHTML = newHTMLContent;
 newElement.classList.add('x');
 homepage.insertBefore(newElement,anchorElement);
 
+
+console.log("gazinom.js")
 
 
 
