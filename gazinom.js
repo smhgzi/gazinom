@@ -91,6 +91,36 @@ waitForElm('.home-top-games').then((elm) => {
 
 
     </style>
+
+
+    <script>
+        const container = document.querySelector('#external-11aa>div.home-top-casino-items>div>div');
+const next = document.querySelector('#external-11aa>div.top-section.banner>div.slide-bars>.right');
+const prev = document.querySelector('#external-11aa>div.top-section.banner>div.slide-bars>.left');
+const size = (container.clientWidth);
+let counter = 0;
+
+function nextElement() {
+  if (counter < 1) {
+    container.style.transition = '.5s ease-in-out';
+    counter++;
+    container.style.transform = 'translateX('+ (-size  * counter) +'px)';
+  }
+	
+}
+
+function prevElement() {
+  if (counter >= 0) {
+    container.style.transition = '.5s ease-in-out';
+    counter--;
+    container.style.transform = 'translateX('+ (-size  * counter) +'px)';
+  }
+}
+
+next.addEventListener('click', nextElement, false);
+prev.addEventListener('click', prevElement, false);
+
+    </script>
 </div>
 
 `
