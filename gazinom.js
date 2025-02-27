@@ -20,7 +20,11 @@ function waitForElm(selector) {
 
 
 waitForElm('.home-top-games').then((elm) => {
-    const newHTMLContent = `<div class="home-top-casino" id="external-11aa">
+    const newHTMLContent = `
+    
+    
+    
+    <div class="home-top-casino" id="external-11aa">
     <div class="top-section banner">
         <div class="row-title">Özel ve Öne Çıkanlar</div>
         <div class="slide-bars">
@@ -95,8 +99,8 @@ waitForElm('.home-top-games').then((elm) => {
 
     <script>
         const container = document.querySelector('#external-11aa>div.home-top-casino-items>div>div');
-const next = document.querySelector('#external-11aa>div.top-section.banner>div.slide-bars>.right');
-const prev = document.querySelector('#external-11aa>div.top-section.banner>div.slide-bars>.left');
+const next = document.querySelector('#external-11aa>div.top-section.banner>div.slide-bars>.slide-arrow-box.right');
+const prev = document.querySelector('#external-11aa>div.top-section.banner>div.slide-bars>.slide-arrow-box.left');
 const size = (container.clientWidth);
 let counter = 0;
 
