@@ -265,7 +265,7 @@ function nextElement2() {
     if (counter==1) {
         container2.style.transform = 'translateX('+ (-size2  * counter2 - size2*0.04) +'px)';
     }else{
-    container2.style.transform = 'translateX('+ (-size2  * counter2 - size2*0.02) +'px)';
+    container2.style.transform = 'translateX('+ (-size2  * counter2 - size2*0.04) +'px)';
     }
   }
 	
