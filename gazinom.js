@@ -263,9 +263,9 @@ function nextElement2() {
     container2.style.transition = '.5s ease-in-out';
     counter2++;
     if (counter==1) {
-        container2.style.transform = 'translateX('+ (-size2  * counter2 - size2*0.02) +'px)';
+        container2.style.transform = 'translateX('+ (-size2  * counter2 + size2*0.02) +'px)';
     }else{
-    container2.style.transform = 'translateX('+ (-size2  * counter2 - size2*0.06) +'px)';
+    container2.style.transform = 'translateX('+ (-size2  * counter2 + size2*0.02) +'px)';
     }
   }
 	
