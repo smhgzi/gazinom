@@ -21,8 +21,7 @@ function waitForElm(selector) {
 
 waitForElm('.home-top-games').then((elm) => {
     const newHTMLContent = `
-
-    <div class="home-top-casino" id="external-11aa">
+<div class="home-top-casino" id="external-11aa">
     <div class="top-section banner">
         <div class="row-title">Özel ve Öne Çıkanlar</div>
         <div class="slide-bars">
@@ -50,17 +49,26 @@ waitForElm('.home-top-games').then((elm) => {
         #external-11aa>.home-top-casino-items{
             width: 100%;
             height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
         }
 
         #external-11aa>.home-top-casino-items>.card{
             width: 33%;
             height: 15vh;
             background-color: blue;
+            margin: 10px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
+
 
     </style>
 </div>
-
 
 `
 
