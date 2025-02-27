@@ -95,3 +95,5 @@ function appendnewhtml(){
         setTimeout(appendnewhtml,100);
     }
 }
+
+appendnewhtml();
