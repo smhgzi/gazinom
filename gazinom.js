@@ -20,8 +20,7 @@ function waitForElm(selector) {
 
 
 waitForElm('.home-top-games').then((elm) => {
-    const newHTMLContent = `
-<div class="home-top-casino" id="external-11aa">
+    const newHTMLContent = `<div class="home-top-casino" id="external-11aa">
     <div class="top-section banner">
         <div class="row-title">Özel ve Öne Çıkanlar</div>
         <div class="slide-bars">
@@ -36,35 +35,76 @@ waitForElm('.home-top-games').then((elm) => {
 
 
     <div class="home-top-casino-items">
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
+        <div class="slider-container">
+            <div class="container">
+                <div class="container-box">
+                    <header><h4>Lorem Ipsum</h4></header>
+                </div>
+                <div class="container-box">
+                    <header><h4>Lorem Ipsum</h4></header>
+                </div>
+                <div class="container-box">
+                    <header><h4>Lorem Ipsum</h4></header>
+                </div>
+                <div class="container-box">
+                    <header><h4>Lorem Ipsum</h4></header>
+                </div>
+                <div class="container-box">
+                    <header><h4>Lorem Ipsum</h4></header>
+                </div>
+                <div class="container-box">
+                    <header><h4>Lorem Ipsum</h4></header>
+                </div>
+                <div class="container-box">
+                    <header><h4>Lorem Ipsum</h4></header>
+                </div>
+                <div class="container-box">
+                    <header><h4>Lorem Ipsum</h4></header>
+                </div>
+                <div class="container-box">
+                    <header><h4>Lorem Ipsum</h4></header>
+                </div>
+                <div class="container-box">
+                    <header><h4>Lorem Ipsum</h4></header>
+                </div>
+                <div class="container-box">
+                    <header><h4>Lorem Ipsum</h4></header>
+                </div>
+                <div class="container-box">
+                    <header><h4>Lorem Ipsum</h4></header>
+                </div>
+            </div>
+            </div>
     </div>
 
     <style>
 
-        #external-11aa>.home-top-casino-items{
-            width: 100%;
-            height: auto;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-        }
 
-        #external-11aa>.home-top-casino-items>.card{
+        #external-11aa>.slider-container {
+            width: 1500px;
+            height: 280px;
+            overflow: hidden;
+          }
+          
+          #external-11aa>.slider-container .container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-flow: column wrap;
+          }
+          
+          #external-11aa>.container .container-box {
             width: 33%;
-            height: 15vh;
-            background-color: blue;
-            margin: 10px;
-            border-radius: 10px;
+            height: 100%;
+            margin: 0 25px;
+            background: rgb(52, 152, 219);
+            color: rgb(41, 128, 185);
             display: flex;
             align-items: center;
             justify-content: center;
-        }
+          }
 
 
     </style>
