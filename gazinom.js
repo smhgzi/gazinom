@@ -21,9 +21,118 @@ function waitForElm(selector) {
 /*sliderlar*/
 waitForElm('.home-top-games').then((elm) => {
     const newHTMLContent = `
-    
-    
-    <div class="home-top-casino" id="external-12aa">
+    <div class="home-top-casino" id="external-13aa">
+  <div class="top-section banner">
+      <div class="row-title">Özel ve Öne Çıkanlar</div>
+      <div class="slide-bars">
+          <div class="slide-arrow-box left">
+            <i class="sb-icon sb-arrow-right rotate"></i>
+          </div>
+          <div class="slide-arrow-box right">
+            <i class="sb-icon sb-arrow-right"></i>
+          </div>
+        </div>
+  </div>
+
+
+  <div class="home-top-casino-items">
+      <div class="slider-container">
+          <div class="container">
+              <div class="container-box">
+                  
+              </div>
+              <div class="container-box">
+                  
+              </div>
+              <div class="container-box">
+                  
+              </div>
+              <div class="container-box">
+                 
+              </div>
+              <div class="container-box">
+                  
+              </div>
+              <div class="container-box">
+                  
+              </div>
+              <div class="container-box">
+                  
+              </div>
+              <div class="container-box">
+                  
+              </div>
+              <div class="container-box">
+                  
+              </div>
+              <div class="container-box">
+                 
+              </div>
+              <div class="container-box">
+                  
+              </div>
+              <div class="container-box">
+                  
+              </div><div class="container-box">
+                  
+              </div>
+              <div class="container-box">
+                  
+              </div>
+              <div class="container-box">
+                  
+              </div>
+              <div class="container-box">
+                 
+              </div>
+              <div class="container-box">
+                  
+              </div>
+              <div class="container-box">
+                  
+              </div>
+          </div>
+          </div>
+  </div>
+
+  <style>
+
+
+      #external-13aa >div> .slider-container {
+          width: 100%;
+          height: 15vh;
+          overflow: hidden;
+        }
+        
+        #external-13aa > div>.slider-container .container {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-flow: column wrap;
+        }
+        
+        #external-13aa >div .container .container-box {
+          width: 15%;
+          height: 100%;
+          margin-right: 2%;
+          background: rgb(52, 152, 219);
+          color: rgb(41, 128, 185);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius:10px;
+        }
+
+
+  </style>
+
+
+  
+</div>
+
+<div class="home-top-casino" id="external-12aa">
     <div class="top-section banner">
         <div class="row-title">Özel ve Öne Çıkanlar</div>
         <div class="slide-bars">
@@ -235,7 +344,7 @@ function nextElement() {
   if (counter < 1) {
     container.style.transition = '.5s ease-in-out';
     counter++;
-    container.style.transform = 'translateX('+ (-size  * counter- size*0.02) +'px)';
+    container.style.transform = 'translateX('+ ((-size * counter ) - (size*2/100*counter)) +'px)';
   }
 	
 }
@@ -244,7 +353,7 @@ function prevElement() {
   if (counter > 0 ) {
     container.style.transition = '.5s ease-in-out';
     counter--;
-    container.style.transform = 'translateX('+ (-size  * counter ) +'px)';
+    container.style.transform = 'translateX('+ ((-size * counter ) - (size*2/100*counter)) +'px)';
   }
 }
 
@@ -262,11 +371,7 @@ function nextElement2() {
   if (counter2 < 2) {
     container2.style.transition = '.5s ease-in-out';
     counter2++;
-    if (counter==1) {
-        container2.style.transform = 'translateX('+ (-size2  * counter2 - size2*0.02) +'px)';
-    }else{
-    container2.style.transform = 'translateX('+ (-size2  * counter2 - size2*0.02) +'px)';
-    }
+    container2.style.transform = 'translateX('+ ((-size2 * counter2 ) - (size2*2/100*counter2)) +'px)';
   }
 	
 }
@@ -275,12 +380,39 @@ function prevElement2() {
   if (counter2 > 0 ) {
     container2.style.transition = '.5s ease-in-out';
     counter2--;
-    container2.style.transform = 'translateX('+ (-size2  * counter2) +'px)';
+    container2.style.transform = 'translateX('+ ((-size2 * counter2 ) - (size2*2/100*counter2))  +'px)';
   }
 }
 
 next2.addEventListener('click', nextElement2, false);
 prev2.addEventListener('click', prevElement2, false);
+
+/*slider özel 13aa*/
+const container3 = document.querySelector('#external-13aa>div.home-top-casino-items>div>div');
+const next3 = document.querySelector('#external-13aa>div.top-section.banner>div.slide-bars>.slide-arrow-box.right');
+const prev3 = document.querySelector('#external-13aa>div.top-section.banner>div.slide-bars>.slide-arrow-box.left');
+const size3 = (container3.clientWidth);
+let counter3 = 0;
+
+function nextElement3() {
+  if (counter3 < 2) {
+    container3.style.transition = '.5s ease-in-out';
+    counter3++;
+    container3.style.transform = 'translateX('+ ((-size3 * counter3 ) - (size3*2/100*counter3)) +'px)';
+  }
+	
+}
+
+function prevElement3() {
+  if (counter3 > 0 ) {
+    container3.style.transition = '.5s ease-in-out';
+    counter3--;
+    container3.style.transform = 'translateX('+ ((-size3 * counter3 ) - (size3*2/100*counter3))  +'px)';
+  }
+}
+
+next3.addEventListener('click', nextElement3, false);
+prev3.addEventListener('click', prevElement3, false);
 
 
 
@@ -294,7 +426,9 @@ console.log("gazinom.js")
 /*see all buttons*/
 waitForElm('main.sb').then((elm)=>{
 
-    var newHTMLContent = `<div class="footer-13aa">
+    var newHTMLContent = `
+    
+    <div class="footer-13aa">
     <div class="bottom-info-section">
         <img width="260px" height="31px" class="center mbxs mtm" src="https://bp-file-managers.s3.eu-central-1.amazonaws.com/gazinom/svgviewer-png-output%20%282%29.png" alt="çevrimiçi kumarhane">
     
@@ -476,6 +610,48 @@ waitForElm('main.sb').then((elm)=>{
     </p>
     </div>
 </div>
+
+<style>
+
+
+
+    .footer-13aa{
+        border-top: 5px solid #757575;
+        border-radius: 10px;
+        padding-top:3vh; 
+        font-family: system-ui, sans-serif;
+      }
+      
+      
+      .footer-13aa .link--pink{
+        color: #e0005f;
+      }
+      
+      .footer-13aa img{
+        width: 25%;
+      }
+      
+      .footer-13aa .cards{
+        width: 100%;
+        height: auto;
+        display: flex;
+      }
+      
+      .footer-13aa .card-home{
+        display: inline-block;
+        width: 25%
+      }
+      
+      img.center{
+        margin: 0 37.5%;
+        
+      }
+      
+      
+      
+      
+
+</style>
 
     `
 
