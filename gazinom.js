@@ -132,7 +132,7 @@ function prevElement() {
   if (counter > 0 ) {
     container.style.transition = '.5s ease-in-out';
     counter--;
-    container.style.transform = 'translateX('+ (-size  * counter) +'px)';
+    container.style.transform = 'translateX('+ (-size  * counter - size*0.02) +'px)';
   }
 }
 
