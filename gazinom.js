@@ -20,7 +20,7 @@ function waitForElm(selector) {
 
 
 waitForElm('.home-top-games').then((elm) => {
-    const newHTMLContent = `
+    const newHTMLContent = `DENEME
 
 `
 
