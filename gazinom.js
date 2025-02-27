@@ -235,7 +235,7 @@ function nextElement() {
   if (counter < 1) {
     container.style.transition = '.5s ease-in-out';
     counter++;
-    container.style.transform = 'translateX('+ (-size  * counter) +'px)';
+    container.style.transform = 'translateX('+ (-size  * counter - size*0.02) +'px)';
   }
 	
 }
@@ -244,7 +244,7 @@ function prevElement() {
   if (counter > 0 ) {
     container.style.transition = '.5s ease-in-out';
     counter--;
-    container.style.transform = 'translateX('+ (-size  * counter - size*0.02) +'px)';
+    container.style.transform = 'translateX('+ (-size  * counter ) +'px)';
   }
 }
 
@@ -262,7 +262,7 @@ function nextElement() {
   if (counter < 3) {
     container.style.transition = '.5s ease-in-out';
     counter++;
-    container.style.transform = 'translateX('+ (-size  * counter) +'px)';
+    container.style.transform = 'translateX('+ (-size  * counter- size*0.01) +'px)';
   }
 	
 }
@@ -271,7 +271,7 @@ function prevElement() {
   if (counter > 0 ) {
     container.style.transition = '.5s ease-in-out';
     counter--;
-    container.style.transform = 'translateX('+ (-size  * counter - size*0.01) +'px)';
+    container.style.transform = 'translateX('+ (-size  * counter ) +'px)';
   }
 }
 
