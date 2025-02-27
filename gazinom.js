@@ -497,7 +497,7 @@ waitForElm('#sb-sign-up-template').then((elm)=>{
     var newHTMLContent = `
     
     <video autoplay muted loop id="myVideo">
-    <source src="rain.mp4" type="video/mp4">
+    <source src="https://github.com/smhgzi/gazinom/raw/refs/heads/main/video.mp4" type="video/mp4">
     </video>
 
     <style>
