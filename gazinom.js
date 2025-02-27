@@ -111,6 +111,8 @@ newElement.innerHTML = newHTMLContent;
 newElement.classList.add('x');
 homepage.insertBefore(newElement,anchorElement);
 
+
+/*slider*/
 const container = document.querySelector('#external-11aa>div.home-top-casino-items>div>div');
 const next = document.querySelector('#external-11aa>div.top-section.banner>div.slide-bars>.slide-arrow-box.right');
 const prev = document.querySelector('#external-11aa>div.top-section.banner>div.slide-bars>.slide-arrow-box.left');
@@ -127,7 +129,7 @@ function nextElement() {
 }
 
 function prevElement() {
-  if (counter >= 0) {
+  if (counter > 0 ) {
     container.style.transition = '.5s ease-in-out';
     counter--;
     container.style.transform = 'translateX('+ (-size  * counter) +'px)';

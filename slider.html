@@ -88,7 +88,7 @@ function nextElement() {
 }
 
 function prevElement() {
-  if (counter >= 0) {
+  if (counter > 0 ) {
     container.style.transition = '.5s ease-in-out';
     counter--;
     container.style.transform = 'translateX('+ (-size  * counter) +'px)';
