@@ -116,9 +116,9 @@ waitForElm('.home-top-games').then((elm) => {
           }
           
           #external-12aa >div .container .container-box {
-            width: 16%;
+            width: 15%;
             height: 100%;
-            margin-right: 1%;
+            margin-right: 2%;
             background: rgb(52, 152, 219);
             color: rgb(41, 128, 185);
             display: flex;
