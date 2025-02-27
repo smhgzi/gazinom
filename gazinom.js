@@ -80,13 +80,13 @@ waitForElm('.home-top-games').then((elm) => {
     <style>
 
 
-        #external-11aa>.slider-container {
-            width: 1500px;
-            height: 280px;
+        #external-11aa >div> .slider-container {
+            width: 100%;
+            height: 15vh;
             overflow: hidden;
           }
           
-          #external-11aa>.slider-container .container {
+          #external-11aa > div>.slider-container .container {
             width: 100%;
             height: 100%;
             display: flex;
@@ -95,15 +95,16 @@ waitForElm('.home-top-games').then((elm) => {
             flex-flow: column wrap;
           }
           
-          #external-11aa>.container .container-box {
-            width: 33%;
+          #external-11aa >div .container .container-box {
+            width: 32%;
             height: 100%;
-            margin: 0 25px;
+            margin-right: 2%;
             background: rgb(52, 152, 219);
             color: rgb(41, 128, 185);
             display: flex;
             align-items: center;
             justify-content: center;
+            border-radius:10px;
           }
 
 
