@@ -38,40 +38,22 @@ waitForElm('.home-top-games').then((elm) => {
         <div class="slider-container">
             <div class="container">
                 <div class="container-box">
-                    <header><h4>Lorem Ipsum</h4></header>
+                    
                 </div>
                 <div class="container-box">
-                    <header><h4>Lorem Ipsum</h4></header>
+                    
                 </div>
                 <div class="container-box">
-                    <header><h4>Lorem Ipsum</h4></header>
+                    
                 </div>
                 <div class="container-box">
-                    <header><h4>Lorem Ipsum</h4></header>
+                   
                 </div>
                 <div class="container-box">
-                    <header><h4>Lorem Ipsum</h4></header>
+                    
                 </div>
                 <div class="container-box">
-                    <header><h4>Lorem Ipsum</h4></header>
-                </div>
-                <div class="container-box">
-                    <header><h4>Lorem Ipsum</h4></header>
-                </div>
-                <div class="container-box">
-                    <header><h4>Lorem Ipsum</h4></header>
-                </div>
-                <div class="container-box">
-                    <header><h4>Lorem Ipsum</h4></header>
-                </div>
-                <div class="container-box">
-                    <header><h4>Lorem Ipsum</h4></header>
-                </div>
-                <div class="container-box">
-                    <header><h4>Lorem Ipsum</h4></header>
-                </div>
-                <div class="container-box">
-                    <header><h4>Lorem Ipsum</h4></header>
+                    
                 </div>
             </div>
             </div>
