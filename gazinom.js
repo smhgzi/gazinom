@@ -491,5 +491,33 @@ waitForElm('main.sb').then((elm)=>{
 });
 
 
+/*video background login */
+waitForElm('#sb-sign-up-template').then((elm)=>{
 
+    var newHTMLContent = `
+    
+    <video autoplay muted loop id="myVideo">
+    <source src="rain.mp4" type="video/mp4">
+    </video>
 
+    <style>
+    #myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+    </style>
+    
+    `
+
+    const topcontainer = document.querySelector('#sb-sign-up-template');
+    const newElement = document.createElement("div");
+    
+    newElement.innerHTML = newHTMLContent;
+    newElement.classList.add('xvideo');
+    topcontainer.appendChild(newElement);
+
+});
