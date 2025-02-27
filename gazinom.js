@@ -97,8 +97,7 @@ waitForElm('.home-top-games').then((elm) => {
     </style>
 
 
-    <script>
-    </script>
+   
 </div>
 
 `
