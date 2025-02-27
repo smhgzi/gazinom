@@ -98,7 +98,21 @@ waitForElm('.home-top-games').then((elm) => {
 
 
     <script>
-        const container = document.querySelector('#external-11aa>div.home-top-casino-items>div>div');
+    </script>
+</div>
+
+`
+
+
+
+const anchorElement = document.querySelector(".home-top-games")
+const homepage = document.querySelector(".home-page-body")
+const newElement = document.createElement("div");
+newElement.innerHTML = newHTMLContent;
+newElement.classList.add('x');
+homepage.insertBefore(newElement,anchorElement);
+
+const container = document.querySelector('#external-11aa>div.home-top-casino-items>div>div');
 const next = document.querySelector('#external-11aa>div.top-section.banner>div.slide-bars>.slide-arrow-box.right');
 const prev = document.querySelector('#external-11aa>div.top-section.banner>div.slide-bars>.slide-arrow-box.left');
 const size = (container.clientWidth);
@@ -123,20 +137,6 @@ function prevElement() {
 
 next.addEventListener('click', nextElement, false);
 prev.addEventListener('click', prevElement, false);
-
-    </script>
-</div>
-
-`
-
-
-
-const anchorElement = document.querySelector(".home-top-games")
-const homepage = document.querySelector(".home-page-body")
-const newElement = document.createElement("div");
-newElement.innerHTML = newHTMLContent;
-newElement.classList.add('x');
-homepage.insertBefore(newElement,anchorElement);
 
 
 console.log("gazinom.js")
