@@ -20,8 +20,7 @@ function waitForElm(selector) {
 
 /*sliderlar*/
 waitForElm('.home-top-games').then((elm) => {
-    const newHTMLContent = `
-    <div class="home-top-casino" id="external-13aa">
+    const newHTMLContent = `<div class="home-top-casino" id="external-13aa">
   <div class="top-section banner">
       <div class="row-title">Özel ve Öne Çıkanlar</div>
       <div class="slide-bars">
@@ -38,57 +37,56 @@ waitForElm('.home-top-games').then((elm) => {
   <div class="home-top-casino-items">
       <div class="slider-container">
           <div class="container">
-              <div class="container-box">
+              <div class="container-box" id="e13aa1" style="background-image: url('https://bp-file-managers.s3.eu-central-1.amazonaws.com/gazinom/2.webp');">
                   
               </div>
-              <div class="container-box">
+              <div class="container-box" id="e13aa2" style="background-image: url('https://bp-file-managers.s3.eu-central-1.amazonaws.com/gazinom/2.webp');">
+              </div>
+              <div class="container-box" id="e13aa3"style="background-image: url('https://bp-file-managers.s3.eu-central-1.amazonaws.com/gazinom/2.webp');">
                   
               </div>
-              <div class="container-box">
-                  
-              </div>
-              <div class="container-box">
+              <div class="container-box" id="e13aa4"style="background-image: url('https://bp-file-managers.s3.eu-central-1.amazonaws.com/gazinom/2.webp');">
                  
               </div>
-              <div class="container-box">
+              <div class="container-box" id="e13aa5"style="background-image: url('https://bp-file-managers.s3.eu-central-1.amazonaws.com/gazinom/2.webp');">
                   
               </div>
-              <div class="container-box">
+              <div class="container-box" id="e13aa6"style="background-image: url('https://bp-file-managers.s3.eu-central-1.amazonaws.com/gazinom/2.webp');">
                   
               </div>
-              <div class="container-box">
+              <div class="container-box" id="e13aa7"style="background-image: url('https://bp-file-managers.s3.eu-central-1.amazonaws.com/gazinom/2.webp');">
                   
               </div>
-              <div class="container-box">
+              <div class="container-box" id="e13aa8"style="background-image: url('https://bp-file-managers.s3.eu-central-1.amazonaws.com/gazinom/2.webp');">
                   
               </div>
-              <div class="container-box">
+              <div class="container-box" id="e13aa9"style="background-image: url('https://bp-file-managers.s3.eu-central-1.amazonaws.com/gazinom/2.webp');">
                   
               </div>
-              <div class="container-box">
+              <div class="container-box" id="e13aa10"style="background-image: url('https://bp-file-managers.s3.eu-central-1.amazonaws.com/gazinom/2.webp');">
                  
               </div>
-              <div class="container-box">
+              <div class="container-box" id="e13aa11"style="background-image: url('https://bp-file-managers.s3.eu-central-1.amazonaws.com/gazinom/2.webp');">
                   
               </div>
-              <div class="container-box">
+              <div class="container-box" id="e13aa12"style="background-image: url('https://bp-file-managers.s3.eu-central-1.amazonaws.com/gazinom/2.webp');">
                   
-              </div><div class="container-box">
-                  
-              </div>
-              <div class="container-box">
+              </div><div class="container-box" id="e13aa13"style="background-image: url('https://bp-file-managers.s3.eu-central-1.amazonaws.com/gazinom/2.webp');">
                   
               </div>
-              <div class="container-box">
+              <div class="container-box" id="e13aa14"style="background-image: url('https://bp-file-managers.s3.eu-central-1.amazonaws.com/gazinom/2.webp');">
                   
               </div>
-              <div class="container-box">
+              <div class="container-box" id="e13aa15"style="background-image: url('https://bp-file-managers.s3.eu-central-1.amazonaws.com/gazinom/2.webp');">
+                  
+              </div>
+              <div class="container-box" id="e13aa16"style="background-image: url('https://bp-file-managers.s3.eu-central-1.amazonaws.com/gazinom/2.webp');">
                  
               </div>
-              <div class="container-box">
+              <div class="container-box" id="e13aa17"style="background-image: url('https://bp-file-managers.s3.eu-central-1.amazonaws.com/gazinom/2.webp');">
                   
               </div>
-              <div class="container-box">
+              <div class="container-box" id="e13aa18"style="background-image: url('https://bp-file-managers.s3.eu-central-1.amazonaws.com/gazinom/2.webp');">
                   
               </div>
           </div>
@@ -100,7 +98,7 @@ waitForElm('.home-top-games').then((elm) => {
 
       #external-13aa >div> .slider-container {
           width: 100%;
-          height: 15vh;
+          height: 30vh;
           overflow: hidden;
         }
         
@@ -123,6 +121,7 @@ waitForElm('.home-top-games').then((elm) => {
           align-items: center;
           justify-content: center;
           border-radius:10px;
+          background-position: center;background-size: cover;background-color: white;background-repeat: no-repeat;
         }
 
 
@@ -133,192 +132,201 @@ waitForElm('.home-top-games').then((elm) => {
 </div>
 
 <div class="home-top-casino" id="external-12aa">
-    <div class="top-section banner">
-        <div class="row-title">Özel ve Öne Çıkanlar</div>
-        <div class="slide-bars">
-            <div class="slide-arrow-box left">
-              <i class="sb-icon sb-arrow-right rotate"></i>
-            </div>
-            <div class="slide-arrow-box right">
-              <i class="sb-icon sb-arrow-right"></i>
-            </div>
+  <div class="top-section banner">
+      <div class="row-title">Özel ve Öne Çıkanlar</div>
+      <div class="slide-bars">
+          <div class="slide-arrow-box left">
+            <i class="sb-icon sb-arrow-right rotate"></i>
           </div>
-    </div>
+          <div class="slide-arrow-box right">
+            <i class="sb-icon sb-arrow-right"></i>
+          </div>
+        </div>
+  </div>
 
 
-    <div class="home-top-casino-items">
-        <div class="slider-container">
-            <div class="container">
-                <div class="container-box">
-                    
-                </div>
-                <div class="container-box">
-                    
-                </div>
-                <div class="container-box">
-                    
-                </div>
-                <div class="container-box">
-                   
-                </div>
-                <div class="container-box">
-                    
-                </div>
-                <div class="container-box">
-                    
-                </div>
-                <div class="container-box">
-                    
-                </div>
-                <div class="container-box">
-                    
-                </div>
-                <div class="container-box">
-                    
-                </div>
-                <div class="container-box">
-                   
-                </div>
-                <div class="container-box">
-                    
-                </div>
-                <div class="container-box">
-                    
-                </div><div class="container-box">
-                    
-                </div>
-                <div class="container-box">
-                    
-                </div>
-                <div class="container-box">
-                    
-                </div>
-                <div class="container-box">
-                   
-                </div>
-                <div class="container-box">
-                    
-                </div>
-                <div class="container-box">
-                    
-                </div>
-            </div>
-            </div>
-    </div>
+  <div class="home-top-casino-items">
+      <div class="slider-container">
+          <div class="container">
+              <div class="container-box" id="e12aa1"style="background-image: url('https://bp-file-managers.s3.eu-central-1.amazonaws.com/gazinom/2.webp');">
+                  
+              </div>
+              <div class="container-box" id="e12aa2"style="background-image: url('https://bp-file-managers.s3.eu-central-1.amazonaws.com/gazinom/2.webp');">
+              </div>
+              <div class="container-box" id="e12aa3"style="background-image: url('https://bp-file-managers.s3.eu-central-1.amazonaws.com/gazinom/2.webp');">
+                  
+              </div>
+              <div class="container-box" id="e12aa4"style="background-image: url('https://bp-file-managers.s3.eu-central-1.amazonaws.com/gazinom/2.webp');">
+                 
+              </div>
+              <div class="container-box" id="e12aa5"style="background-image: url('https://bp-file-managers.s3.eu-central-1.amazonaws.com/gazinom/2.webp');">
+                  
+              </div>
+              <div class="container-box" id="e12aa6"style="background-image: url('https://bp-file-managers.s3.eu-central-1.amazonaws.com/gazinom/2.webp');">
+                  
+              </div>
+              <div class="container-box" id="e12aa7"style="background-image: url('https://bp-file-managers.s3.eu-central-1.amazonaws.com/gazinom/2.webp');">
+                  
+              </div>
+              <div class="container-box" id="e12aa8"style="background-image: url('https://bp-file-managers.s3.eu-central-1.amazonaws.com/gazinom/2.webp');">
+                  
+              </div>
+              <div class="container-box" id="e12aa9"style="background-image: url('https://bp-file-managers.s3.eu-central-1.amazonaws.com/gazinom/2.webp');">
+                  
+              </div>
+              <div class="container-box" id="e12aa10"style="background-image: url('https://bp-file-managers.s3.eu-central-1.amazonaws.com/gazinom/2.webp');">
+                 
+              </div>
+              <div class="container-box" id="e12aa11"style="background-image: url('https://bp-file-managers.s3.eu-central-1.amazonaws.com/gazinom/2.webp');">
+                  
+              </div>
+              <div class="container-box" id="e12aa12"style="background-image: url('https://bp-file-managers.s3.eu-central-1.amazonaws.com/gazinom/2.webp');">
+                  
+              </div><div class="container-box" id="e12aa13"style="background-image: url('https://bp-file-managers.s3.eu-central-1.amazonaws.com/gazinom/2.webp');">
+                  
+              </div>
+              <div class="container-box" id="e12aa14"style="background-image: url('https://bp-file-managers.s3.eu-central-1.amazonaws.com/gazinom/2.webp');">
+                  
+              </div>
+              <div class="container-box" id="e12aa15"style="background-image: url('https://bp-file-managers.s3.eu-central-1.amazonaws.com/gazinom/2.webp');">
+                  
+              </div>
+              <div class="container-box" id="e12aa16"style="background-image: url('https://bp-file-managers.s3.eu-central-1.amazonaws.com/gazinom/2.webp');">
+                 
+              </div>
+              <div class="container-box" id="e12aa17"style="background-image: url('https://bp-file-managers.s3.eu-central-1.amazonaws.com/gazinom/2.webp');">
+                  
+              </div>
+              <div class="container-box" id="e12aa18"style="background-image: url('https://bp-file-managers.s3.eu-central-1.amazonaws.com/gazinom/2.webp');">
+                  
+              </div>
+          </div>
+          </div>
+  </div>
 
-    <style>
-
-
-        #external-12aa >div> .slider-container {
-            width: 100%;
-            height: 15vh;
-            overflow: hidden;
-          }
-          
-          #external-12aa > div>.slider-container .container {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-flow: column wrap;
-          }
-          
-          #external-12aa >div .container .container-box {
-            width: 15%;
-            height: 100%;
-            margin-right: 2%;
-            background: rgb(52, 152, 219);
-            color: rgb(41, 128, 185);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius:10px;
-          }
+  <style>
 
 
-    </style>
+      #external-12aa >div> .slider-container {
+          width: 100%;
+          height: 30vh;
+          overflow: hidden;
+        }
+        
+        #external-12aa > div>.slider-container .container {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-flow: column wrap;
+        }
+        
+        #external-12aa >div .container .container-box {
+          width: 15%;
+          height: 100%;
+          margin-right: 2%;
+          background: rgb(52, 152, 219);
+          color: rgb(41, 128, 185);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius:10px;
+          background-position: center;background-size: cover;background-color: white;background-repeat: no-repeat;
+
+        }
+
+        
 
 
-    
+  </style>
+
+
+  
 </div>
 
 
 <div class="home-top-casino" id="external-11aa">
-    <div class="top-section banner">
-        <div class="row-title">Özel ve Öne Çıkanlar</div>
-        <div class="slide-bars">
-            <div class="slide-arrow-box left">
-              <i class="sb-icon sb-arrow-right rotate"></i>
-            </div>
-            <div class="slide-arrow-box right">
-              <i class="sb-icon sb-arrow-right"></i>
-            </div>
+  <div class="top-section banner">
+      <div class="row-title">Özel ve Öne Çıkanlar</div>
+      <div class="slide-bars">
+          <div class="slide-arrow-box left">
+            <i class="sb-icon sb-arrow-right rotate"></i>
           </div>
-    </div>
+          <div class="slide-arrow-box right">
+            <i class="sb-icon sb-arrow-right"></i>
+          </div>
+        </div>
+  </div>
 
 
-    <div class="home-top-casino-items">
-        <div class="slider-container">
-            <div class="container">
-                <div class="container-box">
-                    
-                </div>
-                <div class="container-box">
-                    
-                </div>
-                <div class="container-box">
-                    
-                </div>
-                <div class="container-box">
-                   
-                </div>
-                <div class="container-box">
-                    
-                </div>
-                <div class="container-box">
-                    
-                </div>
-            </div>
-            </div>
-    </div>
+  <div class="home-top-casino-items">
+      <div class="slider-container">
+          <div class="container">
+              <div class="container-box" id="e11aa1"style="background-image: url('https://bp-file-managers.s3.eu-central-1.amazonaws.com/gazinom/2.webp');">
+                  
+              </div>
+              <div class="container-box" id="e11aa2"style="background-image: url('https://bp-file-managers.s3.eu-central-1.amazonaws.com/gazinom/2.webp');">
+              </div>
+              <div class="container-box" id="e11aa3"style="background-image: url('https://bp-file-managers.s3.eu-central-1.amazonaws.com/gazinom/2.webp');">
+                  
+              </div>
+              <div class="container-box" id="e11aa4"style="background-image: url('https://bp-file-managers.s3.eu-central-1.amazonaws.com/gazinom/2.webp');">
+                 
+              </div>
+              <div class="container-box" id="e11aa5"style="background-image: url('https://bp-file-managers.s3.eu-central-1.amazonaws.com/gazinom/2.webp');">
+                  
+              </div>
+              <div class="container-box" id="e11aa6"style="background-image: url('https://bp-file-managers.s3.eu-central-1.amazonaws.com/gazinom/2.webp');">
+                  
+              </div>
+          </div>
+          </div>
+  </div>
 
-    <style>
-
-
-        #external-11aa >div> .slider-container {
-            width: 100%;
-            height: 15vh;
-            overflow: hidden;
-          }
-          
-          #external-11aa > div>.slider-container .container {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-flow: column wrap;
-          }
-          
-          #external-11aa >div .container .container-box {
-            width: 32%;
-            height: 100%;
-            margin-right: 2%;
-            background: rgb(52, 152, 219);
-            color: rgb(41, 128, 185);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius:10px;
-          }
+  <style>
 
 
-    </style>
+      #external-11aa >div> .slider-container {
+          width: 100%;
+          height: 15vh;
+          overflow: hidden;
+        }
+        
+        #external-11aa > div>.slider-container .container {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-flow: column wrap;
+        }
+        
+        #external-11aa >div .container .container-box {
+          width: 32%;
+          height: 100%;
+          margin-right: 2%;
+          background: rgb(52, 152, 219);
+          color: rgb(41, 118, 185);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius:10px;
+          background-position: center;background-size: cover;background-color: white;background-repeat: no-repeat;
+        }
 
 
-    
+
+        #e13aa1{
+          background: url('https://bp-file-managers.s3.eu-central-1.amazonaws.com/gazinom/2.webp') cover;
+        }
+
+  </style>
+
+
+  
 </div>
+
 
 
 `
@@ -649,7 +657,6 @@ waitForElm('main.sb').then((elm)=>{
       
       
       
-      
 
 </style>
 
@@ -698,3 +705,6 @@ waitForElm('#sb-sign-up-template').then((elm)=>{
 
 });*/
 
+while (true) {
+  
+}
