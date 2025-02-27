@@ -1,4 +1,23 @@
+function waitForElm(selector) {
+    return new Promise(resolve => {
+        if (document.querySelector(selector)) {
+            return resolve(document.querySelector(selector));
+        }
 
+        const observer = new MutationObserver(mutations => {
+            if (document.querySelector(selector)) {
+                observer.disconnect();
+                resolve(document.querySelector(selector));
+            }
+        });
+
+        // If you get "parameter 1 is not of type 'Node'" error, see https://stackoverflow.com/a/77855838/492336
+        observer.observe(document.body, {
+            childList: true,
+            subtree: true
+        });
+    });
+}
 
 const newHTMLContent = `           <div class="home-top-casino div-11aa">
         <div class="top-section banner">
@@ -48,52 +67,14 @@ const newHTMLContent = `           <div class="home-top-casino div-11aa">
 `
 
 
-document.addEventListener('DOMContentLoaded', function() {
-    const slider = document.querySelector('.slider-11aa');
-    const slides = document.querySelectorAll('.slide-11aa');
-    const prevButton = document.querySelector('.prev-11aa');
-    const nextButton = document.querySelector('.next-11aa');
-    let currentIndex = 0;
 
-    function updateSlider() {
-        const offset = -currentIndex * 33.33;
-        slider.style.transform = `translateX(${offset}%)`;
-    }
-
-    prevButton.addEventListener('click', () => {
-        if (currentIndex > 0) {
-            currentIndex--;
-            updateSlider();
-        }
-    });
-
-    nextButton.addEventListener('click', () => {
-        if (currentIndex < slides.length - 3) {
-            currentIndex++;
-            updateSlider();
-        }
-    });
-});
+const anchorElement = await waitForElm(".home-top-games")
+const homepage = await waitForElm(".home-page-body")
+const newElement = document.createElement("div");
+newElement.innerHTML = newHTMLContent;
+newElement.classList.add('x');
+homepage.insertBefore(newElement,anchorElement);
 
 
-function appendnewhtml(){
-    const anchorElement = document.querySelector(
-        ".home-top-games"
-    );
-    const homepage = document.querySelector(
-        ".home-page-body"
-    );
-    const appenddedElement = document.querySelector(
-        ".home-top-casino .div-11aa"
-    );
-    if (anchorElement && homepage && !appenddedElement) {
-        const newElement = document.createElement("div");
-        newElement.innerHTML = newHTMLContent;
-        newElement.classList.add('x');
-        homepage.insertBefore(newElement,anchorElement);
-    }else{
-        setTimeout(appendnewhtml,100);
-    }
-}
 
-appendnewhtml();
+
