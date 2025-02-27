@@ -235,7 +235,7 @@ function nextElement() {
   if (counter < 1) {
     container.style.transition = '.5s ease-in-out';
     counter++;
-    container.style.transform = 'translateX('+ (-size  * counter - size*0.02) +'px)';
+    container.style.transform = 'translateX('+ (-size  * counter- size*0.02) +'px)';
   }
 	
 }
@@ -252,31 +252,31 @@ next.addEventListener('click', nextElement, false);
 prev.addEventListener('click', prevElement, false);
 
 /*slider özel 12aa*/
-const container = document.querySelector('#external-12aa>div.home-top-casino-items>div>div');
-const next = document.querySelector('#external-12aa>div.top-section.banner>div.slide-bars>.slide-arrow-box.right');
-const prev = document.querySelector('#external-12aa>div.top-section.banner>div.slide-bars>.slide-arrow-box.left');
-const size = (container.clientWidth);
-let counter = 0;
+const container2 = document.querySelector('#external-12aa>div.home-top-casino-items>div>div');
+const next2 = document.querySelector('#external-12aa>div.top-section.banner>div.slide-bars>.slide-arrow-box.right');
+const prev2 = document.querySelector('#external-12aa>div.top-section.banner>div.slide-bars>.slide-arrow-box.left');
+const size2 = (container2.clientWidth);
+let counter2 = 0;
 
-function nextElement() {
-  if (counter < 3) {
-    container.style.transition = '.5s ease-in-out';
-    counter++;
-    container.style.transform = 'translateX('+ (-size  * counter- size*0.01) +'px)';
+function nextElement2() {
+  if (counter2 < 3) {
+    container2.style.transition = '.5s ease-in-out';
+    counter2++;
+    container2.style.transform = 'translateX('+ (-size2  * counter2- size2*0.01) +'px)';
   }
 	
 }
 
-function prevElement() {
-  if (counter > 0 ) {
-    container.style.transition = '.5s ease-in-out';
-    counter--;
-    container.style.transform = 'translateX('+ (-size  * counter ) +'px)';
+function prevElement2() {
+  if (counter2 > 0 ) {
+    container2.style.transition = '.5s ease-in-out';
+    counter2--;
+    container2.style.transform = 'translateX('+ (-size2  * counter2) +'px)';
   }
 }
 
-next.addEventListener('click', nextElement, false);
-prev.addEventListener('click', prevElement, false);
+next2.addEventListener('click', nextElement2, false);
+prev2.addEventListener('click', prevElement2, false);
 
 
 
