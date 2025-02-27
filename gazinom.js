@@ -476,7 +476,7 @@ waitForElm('main.sb').then((elm)=>{
     </p>
     </div>
 </div>
-    
+
     `
 
     const mainelement = document.querySelector("main.sb");
