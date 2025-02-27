@@ -491,7 +491,7 @@ waitForElm('main.sb').then((elm)=>{
 });
 
 
-/*video background login */
+/*video background login
 waitForElm('#sb-sign-up-template').then((elm)=>{
 
     var newHTMLContent = `
@@ -520,4 +520,4 @@ waitForElm('#sb-sign-up-template').then((elm)=>{
     newElement.classList.add('xvideo');
     topcontainer.appendChild(newElement);
 
-});
+});*/
