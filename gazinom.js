@@ -235,7 +235,7 @@ function nextElement() {
   if (counter < 1) {
     container.style.transition = '.5s ease-in-out';
     counter++;
-    container.style.transform = 'translateX('+ (-size  * counter+ size*0.02) +'px)';
+    container.style.transform = 'translateX('+ (-size  * counter- size*0.02) +'px)';
   }
 	
 }
@@ -262,7 +262,7 @@ function nextElement2() {
   if (counter2 < 2) {
     container2.style.transition = '.5s ease-in-out';
     counter2++;
-    container2.style.transform = 'translateX('+ (-size2  * counter2 + size2*0.02) +'px)';
+    container2.style.transform = 'translateX('+ (-size2  * counter2 - size2*0.02) +'px)';
   }
 	
 }
