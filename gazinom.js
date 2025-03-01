@@ -1,6 +1,6 @@
 const checkthisx = document.querySelector(".checkthisx");
 
-if (window.location.href.includes("home") && !checkthisx) {
+if (window.location.href.includes("home")) {
   
     function waitForElm(selector) {
       return new Promise(resolve => {
@@ -987,9 +987,12 @@ if (window.location.href.includes("home") && !checkthisx) {
     position: fixed;
     right: 0;
     bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index:0;
+    max-width: 100%;
+  max-height: 100%;
+  z-index: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
     }
     
       </style>
@@ -1006,6 +1009,4 @@ if (window.location.href.includes("home") && !checkthisx) {
     });
     
 }
-else{
-    window.location.reload();
-};
+
