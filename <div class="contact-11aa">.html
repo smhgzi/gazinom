@@ -1,0 +1,174 @@
+<div class="contact-11aa">
+
+    <div id="section-contact" class="sectionContact contact-11aa">
+        <p class="sectionContact-Maintitle">Bize Ulaşın</p>
+        <ul class="sectionContact-list">
+            <li class="sectionContact-item">
+                <div class="sectionContact-wrapper">
+                    <img class="sectionContact-icon" src="https://www.casinogranmadridonline.es/img/icon-chat.svg" alt="Sohbet görüntüsü kaynağı" width="32" height="32" loading="lazy">
+                    <p class="sectionContact-title">Sohbet</p>
+                    <p id="stateChat" class="sectionContact-text">
+                        İletişim kurmanın en hızlı ve kolay yolu
+                        Üzgünüz, temsilcilerimiz şu anda müsait değil
+                    </p>
+                    <button onclick="openChat();" id="sendmail" class="sectionContact-button" type="button"> E-posta Gönder </button>
+                </div>
+            </li>
+            <li class="sectionContact-item" onclick="window.location.href='mailto:musteriler@granmadrid.es'">
+                <div class="sectionContact-wrapper">
+                    <img class="sectionContact-icon" src="https://www.casinogranmadridonline.es/img/icon-mail.svg" alt="E-posta görüntüsü kaynağı" width="32" height="32" loading="lazy">
+                    <p class="sectionContact-title">E-posta</p>
+                    <p class="sectionContact-text">
+                        Bize şu adrese e-posta gönderebilirsiniz:
+                        <span class="linkPink"> musteriler@granmadrid.es</span>
+                    </p>
+                    <button class="sectionContact-button" type="button"> E-posta Gönder</button>
+                </div>
+            </li>
+            <li class="sectionContact-item" onclick="window.location.href='tel:+90 212 856 11 11'">
+                <div class="sectionContact-wrapper">
+                    <img class="sectionContact-icon" src="https://www.casinogranmadridonline.es/img/icon-phone.svg" alt="Telefon görüntüsü kaynağı" width="32" height="32" loading="lazy">
+                    <p class="sectionContact-title">Telefon</p>
+                    <p class="sectionContact-text">
+                        Telefonla iletişime geçmek için şu numarayı arayın:
+                        <span class="linkPink"> 212 856 11 11</span>
+                    </p>
+                    <button class="sectionContact-button" type="button"> Ara</button>
+                </div>
+            </li>
+        </ul>
+        <p class="sectionContact-footerText">
+            Bir şikâyette bulunmanız mı gerekiyor? <a onclick="window.location.href='https://www.casinogranmadridonline.es/contacto/buzon-reclamaciones'" class="linkPink">
+                Daha fazla bilgi</a>
+        </p>
+        <p class="sectionContact-footerText">
+            Müşteri Hizmetleri Temsilcilerimiz size Pazartesi’den Pazar’a <strong>09:00-01:00</strong> saatleri arasında yardımcı olmak için çalışıyor
+        </p>
+    </div>
+
+</div>
+<style>
+    .contact-11aa {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 40px 20px;
+        font-family: Arial, sans-serif;
+        color: #333;
+        background-color: #f0f0f0; /* Light gray background for the entire section */
+        border-radius: 10px;
+    }
+
+    .contact-11aa .sectionContact-Maintitle {
+        font-size: 24px;
+        font-weight: bold;
+        color: #2c3e50;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .contact-11aa .sectionContact-list {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .contact-11aa .sectionContact-item {
+        flex: 1;
+        max-width: 300px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        text-align: center;
+        cursor: pointer;
+        transition: transform 0.2s ease;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 250px; /* Fixed height for all cards to ensure uniformity */
+    }
+
+    .contact-11aa .sectionContact-item:hover {
+        transform: translateY(-5px);
+    }
+
+    .contact-11aa .sectionContact-icon {
+        width: 32px;
+        height: 32px;
+        margin-bottom: 10px;
+    }
+
+    .contact-11aa .sectionContact-title {
+        font-size: 18px;
+        font-weight: bold;
+        color: #2c3e50;
+        margin-bottom: 10px;
+    }
+
+    .contact-11aa .sectionContact-text {
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 15px;
+        line-height: 1.5;
+        flex-grow: 1; /* Allows text to expand and keep cards uniform in height */
+    }
+
+    .contact-11aa .linkPink {
+        color: #d81b60;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .contact-11aa .linkPink:hover {
+        text-decoration: underline;
+    }
+
+    .contact-11aa .sectionContact-button {
+        background-color: #d81b60;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 14px;
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+        width: 100%; /* Ensures buttons span the full width of the card */
+    }
+
+    .contact-11aa .sectionContact-button:hover {
+        background-color: #b01750;
+    }
+
+    .contact-11aa #stateChat {
+        color: #888;
+        font-style: italic;
+    }
+
+    .contact-11aa .sectionContact-footerText {
+        text-align: center;
+        font-size: 14px;
+        color: #666;
+        margin-top: 20px;
+    }
+
+    .contact-11aa .sectionContact-footerText strong {
+        color: #2c3e50;
+    }
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+        .contact-11aa .sectionContact-list {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .contact-11aa .sectionContact-item {
+            max-width: 100%;
+            margin-bottom: 20px;
+            height: auto; /* Allows cards to adjust height on mobile */
+        }
+    }
+</style>
