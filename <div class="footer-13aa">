@@ -1,0 +1,99 @@
+<div class="footer-13aa">
+        <div class="bottom-info-section">
+            <img class="center mbxs mtm" src="https://bp-file-managers.s3.eu-central-1.amazonaws.com/gazinom/bbb.png" alt="çevrimiçi kumarhane">
+
+            <!-- Accordion Menü Başlangıç -->
+            <div class="accordion">
+                <!-- Accordion Öğesi 1 -->
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h2 class="h2">Türkiye'nin İlk Global Çevrimiçi Kumarhanesi</h2>
+                    </div>
+                    <div class="accordion-content">
+                        <p class="text">
+                            Türkiye'nin ilk <strong>çevrimiçi kumarhanesine</strong> hoş geldiniz; tamamen güvenilir ve sorumlu bir çevrimiçi kumarhane olarak, oyun kataloğumuzun tamamı DGOJ (Oyun Düzenleme Genel Müdürlüğü) tarafından onaylanmıştır.
+                        </p>
+                        <p class="text">
+                            Biz, Türkiye'de faaliyet izni alan ilk <strong><a href="#" class="link--pink">çevrimiçi kumarhane</a></strong> olarak, müşterilerimize yasal, güvenli ve güvenilir bir şekilde eksiksiz bir çevrimiçi kumarhane deneyimi sunuyoruz.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Accordion Öğesi 2 -->
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h2 class="h2">Türkiye'deki Çevrimiçi Kumarhane Oyunlarımız</h2>
+                    </div>
+                    <div class="accordion-content">
+                        <p class="text">
+                            En iyi <strong>çevrimiçi kumarhane oyunları</strong> mı? <strong>Gazinom | Çevrimiçi Kumarhane</strong>'de! 2011'den beri kumarhanemizde maksimum güvenlikle oynayabilir ve eğlenebilirsiniz; üstelik sektörün en geniş oyun yelpazesine sahibiz. <strong>Canlı çevrimiçi kumarhanemizde</strong> <strong>blackjack</strong>, geniş bir <strong>slot</strong> yelpazesi ve <strong>canlı rulet</strong> oyunları öne çıkıyor.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Accordion Öğesi 3 -->
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h2 class="h2">En Fazla Deneyime Sahip Çevrimiçi Kumarhane</h2>
+                    </div>
+                    <div class="accordion-content">
+                        <p class="text">
+                            Oyun sektöründe deneyimden bahsediyorsak, <strong>Gazinom | Çevrimiçi Kumarhane</strong>'den bahsediyoruz demektir. 30 yılı aşkın süredir <strong>fiziksel oyun</strong> alanında hizmet veriyoruz ve 1991'de <strong>Gazinom | Torrelodones Kumarhanesi</strong>'ni açarak Türkiye'de öncü olduk. Biriktirdiğimiz tüm deneyimle, 2013'te Casino'nun başkenti Lefkoşa'nın tam merkezinde <strong>Gazinom | Colón Kumarhanesi</strong>'ni açtık. Gazinom'daki <strong>çevrimiçi kumarhanenizde</strong> eşsiz ve güvenli bir deneyim yaşayın, geniş deneyimimizden faydalanın.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Diğer Accordion Öğeleri Buraya Eklenebilir -->
+            </div>
+            <!-- Accordion Menü Bitiş -->
+        </div>
+    </div>
+
+    <!-- İletişim Bölümü -->
+    <div class="contact-11aa">
+        <div id="section-contact" class="sectionContact contact-11aa">
+            <p class="sectionContact-Maintitle">Bize Ulaşın</p>
+            <ul class="sectionContact-list">
+                <li class="sectionContact-item">
+                    <div class="sectionContact-wrapper">
+                        <img class="sectionContact-icon" src="https://bp-file-managers.s3.eu-central-1.amazonaws.com/gazinom/svgviewer-png-output%20%282%29.png" alt="Sohbet görüntüsü kaynağı" width="32" height="32" loading="lazy">
+                        <p class="sectionContact-title">Sohbet</p>
+                        <p id="stateChat" class="sectionContact-text">
+                            İletişim kurmanın en hızlı ve kolay yolu
+                            Üzgünüz, temsilcilerimiz şu anda müsait değil
+                        </p>
+                        <button onclick="openChat();" id="sendmail" class="sectionContact-button" type="button"> Canlı Sohbete Bağlan </button>
+                    </div>
+                </li>
+                <li class="sectionContact-item" onclick="window.location.href='mailto:musteriler@granmadrid.es'">
+                    <div class="sectionContact-wrapper">
+                        <img class="sectionContact-icon" src="https://bp-file-managers.s3.eu-central-1.amazonaws.com/gazinom/svgviewer-png-output%20%283%29.png" alt="E-posta görüntüsü kaynağı" width="32" height="32" loading="lazy">
+                        <p class="sectionContact-title">E-posta</p>
+                        <p class="sectionContact-text">
+                            Bize şu adrese e-posta gönderebilirsiniz:
+                            <span class="linkPink"> musteriler@granmadrid.es</span>
+                        </p>
+                        <button class="sectionContact-button" type="button"> E-posta Gönder</button>
+                    </div>
+                </li>
+                <li class="sectionContact-item" onclick="window.location.href='tel:+90 212 856 11 11'">
+                    <div class="sectionContact-wrapper">
+                        <img class="sectionContact-icon" src="https://bp-file-managers.s3.eu-central-1.amazonaws.com/gazinom/svgviewer-png-output%20%284%29.png" alt="Telefon görüntüsü kaynağı" width="32" height="32" loading="lazy">
+                        <p class="sectionContact-title">Telefon</p>
+                        <p class="sectionContact-text">
+                            Telefonla iletişime geçmek için şu numarayı arayın:
+                            <span class="linkPink"> 212 856 11 11</span>
+                        </p>
+                        <button class="sectionContact-button" type="button"> Ara</button>
+                    </div>
+                </li>
+            </ul>
+            <p class="sectionContact-footerText">
+                Bir şikâyette bulunmanız mı gerekiyor? <a onclick="window.location.href='https://www.casinogranmadridonline.es/contacto/buzon-reclamaciones'" class="linkPink">
+                    Daha fazla bilgi</a>
+            </p>
+            <p class="sectionContact-footerText">
+                Müşteri Hizmetleri Temsilcilerimiz size Pazartesi’den Pazar’a <strong>09:00-01:00</strong> saatleri arasında yardımcı olmak için çalışıyor
+            </p>
+        </div>
+    </div>

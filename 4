@@ -1,3 +1,101 @@
+<style>
+.partially-full{
+  grid-template-columns: 1fr 1fr;
+}
+
+.sign-in-container{
+  width: 350px;
+  right: calc((100% - 350px)/2);
+  position: fixed;
+  height: 500px;
+  top: 25vh;
+  box-shadow: 0px 0px 0px 100000px rgba(0, 0, 0, 0.85);
+  justify-content: center;
+  align-content: center;
+}
+
+.sign-in-container .fields-wrapper:before{
+  content: "";
+  display: inline-block;
+  width: 100%; 
+  height: 150px; 
+  margin-bottom: 30px; 
+  background-image: url("https://bp-file-managers.s3.eu-central-1.amazonaws.com/gazinom/login.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.sign-in-container .sb-tooltip-arrow{
+  display: none;
+}
+
+div[id*="ember"]{
+background: #E8E8E86B;
+z-index: 99;
+  margin-right: 30%;
+margin-top: 10%;
+width:40%;
+padding:0;
+}
+
+.sign-up-wrapper .top-section{
+  display: none;
+}
+
+input[id*=ember]{
+  border-radius: 30px;
+  border: 1px darkgrey solid;
+  color:black;
+  background-color:white;
+}
+
+
+select{border-radius: 25px;
+  border: 1px darkgrey solid;
+  color:black;}
+
+#ember55{
+  background-color: bfbdbd;
+  border-radius:25px;
+  border: 3px darkgrey solid;
+}
+
+.sb-popup{
+  background: white;
+}
+
+.btn.btn-basic.btn-full{
+  background: #e0005f;
+  color: white;
+}
+
+.field-box.validated-birthday-input .validated-input  .fieldTopLabel.profile-birthday{
+  border-radius: 25px;
+  border: 1px darkgrey solid;
+  color:black;
+  background-color:white;
+}
+
+.field-box > select{
+  border-radius: 25px;
+  border: 1px darkgrey solid;
+  color:black;
+  background-color:white;
+}
+
+.sign-up-wrapper .main-content .fields-wrapper{
+  max-width: 95%
+}
+
+
+</style>
+
+<script>
+
 
 
 var checkthisx = document.querySelector(".checkthisx")
@@ -1088,3 +1186,11 @@ var checkthisx = document.querySelector(".checkthisx")
 
 
 
+
+
+
+</script>
+
+
+
+<!-- Burger Menu -->
